@@ -6,7 +6,7 @@ A stylish and simple restaurant website built using **HTML** and **CSS** only.
 
 ## 🔗 Live Demo
 
-👉 [View Live Website](https://gobi2001-2006.github.io/FIBULA-restuarant-usig-html-and-css/main.html)
+👉 [View Live Website](http://127.0.0.1:5501/project/main.html)
 
 
 
