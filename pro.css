@@ -1,0 +1,78 @@
+:root {
+  --background-white: #f2f2f2; /* Rice White */
+  --background-mint: #daf5db; /* Mint Drink Light Green */
+  --button-primary: #782f1c; /* Curry Red-Brown */
+  --heading-text: #2a1c17; /* Charred Fish Black */
+  --link-hover: #e3a518; /* Golden Yellow */
+  --section-light: #f2f2f2; /* Light Section */
+  --section-soft: #daf5db; /* Alternate Light Green */
+  --header-footer: #5a3a1d; /* Clay Pot Brown */
+  --accent-green: #3c6e3c; /* Banana Leaf Green */
+}
+
+.landing {
+  background-image: url(landing.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--background-white);
+}
+header a {
+  text-decoration: none;
+  color: var(--link-hover);
+}
+header {
+  display: flex;
+  padding: 1em;
+}
+#logo {
+  flex: 3;
+  font-size: 1.25em;
+}
+nav {
+  flex: 2;
+  display: flex;
+}
+nav a {
+  flex: 1;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover {
+  color: rgb(110, 222, 18);
+}
+.maintext {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  padding: 2em;
+}
+
+.line2 {
+  color: #f3eded;
+}
+.call {
+  color: #f7f3f3;
+}
+.line1 {
+  display: inline-block; /* wraps background tightly around the text */
+  color: rgb(223, 13, 20); /* Spicy red text */
+  font-size: 40px;
+  background-color: #130202; /* Dark background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.maintext div {
+  margin-top: 0.75em;
+}
+.maintext button {
+  width: 20vw;
+  margin-top: 2em;
+  border-radius: 10px;
+  padding: 0.7em;
+  background-color: #3c6e3c;
+  color: whitesmoke;
+}

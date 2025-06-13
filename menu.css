@@ -1,0 +1,130 @@
+:root {
+  --bg-dark: #130202; /* Main dark background */
+  --text-red: rgb(223, 13, 20); /* Spicy red text */
+  --card-bg: rgba(19, 2, 2, 0.9); /* Transparent dark card background */
+  --accent-yellow: #e3a518; /* Golden yellow highlight */
+  --white: #f2f2f2;
+  --clay-brown: #5a3a1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--clay-brown);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--text-red);
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--white);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-yellow);
+}
+
+.menu-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.menu-section h1 {
+  font-size: 36px;
+  color: var(--accent-yellow);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.menu-category {
+  background-color: var(--card-bg);
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(227, 165, 24, 0.15); /* golden glow */
+}
+
+.menu-category h2 {
+  font-size: 28px;
+  color: var(--text-red);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--text-red);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.menu-item {
+  margin: 15px 0;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  color: var(--accent-yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item p {
+  color: var(--white);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-size: 18px;
+  background-color: var(--card-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: var(--clay-brown);
+}
+
+@media (max-width: 600px) {
+  .menu-item h3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .menu-category {
+    padding: 20px 15px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
